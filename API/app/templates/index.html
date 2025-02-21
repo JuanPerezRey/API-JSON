@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Telefono</h1>
+<a href="/crear" class="btn btn-primary">Agregar Telefono</a>
+
+<!-- Formulario de búsqueda -->
+<form action="/buscar" method="get" class="my-3">
+    <div class="input-group">
+        <input type="text" name="codigo_telefono" class="form-control" placeholder="Código del Telefono" required>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Almacenamiento GB</th>
+            <th>Color</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Codigo Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for telefono in telefonos %}
+        <tr>
+            <td>{{ telefono.marca }}</td>
+            <td>{{ telefono.modelo }}</td>
+            <td>{{ telefono.almacenamiento_gb }}</td>
+            <td>{{ telefono.color }}</td>
+            <td>{{ telefono.precio }}</td>
+            <td>{{ telefono.stock }}</td>
+            <td>{{ telefono.codigo_telefono }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

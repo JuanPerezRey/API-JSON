@@ -1,0 +1,11 @@
+[
+    {
+        "marca": "Samsung",
+        "modelo": "S25",
+        "almacenamiento_gb": "1TB",
+        "color": "Negro",
+        "precio": 500,
+        "stock": 1,
+        "codigo_telefono": 103
+    }
+]

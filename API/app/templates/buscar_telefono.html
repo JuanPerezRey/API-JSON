@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Telefono Encontrado</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Almacenamiento GB</th>
+            <th>Color</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Codigo Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ telefono.marca }}</td>
+            <td>{{ telefono.modelo }}</td>
+            <td>{{ telefono.almacenamiento_gb }}</td>
+            <td>{{ telefono.color }}</td>
+            <td>{{ telefono.precio }}</td>
+            <td>{{ telefono.stock }}</td>
+            <td>{{ telefono.codigo_telefono }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
