@@ -8,3 +8,6 @@ class Telefono(BaseModel):
     precio: int
     stock: int
     codigo_telefono: int
+    
+
+#Hola
